@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calculator">
+      <div class="calculator__output"> 
+       <form> <input type="text" name="answer" 
+        id="answer" placeholder="0"/> <!--SCREEN-->
+    </div>
+    
+    <div class="calculation__keys">
+      <input type="button" class="calculator__key function__key" value="DEL" onclick="deleteButton()"> <!--DELETE-->
+      <input type="button" class="calculator__key function__key" value="AC" onclick="clearAll()"> <!--CLEAR ALL-->
+      <input type="button" class="calculator__key function__key" value="÷" onclick="addAnswer('/')"> <!--DIVIDE-->
+      <input type="button" class="calculator__key function__key" value="x" onclick="addAnswer('*')"> <!--MULTIPLICATION-->
+      <input type="button" class="calculator__key" value="7" onclick="addAnswer('7')"> <!--7-->
+      <input type="button" class="calculator__key" value="8" onclick="addAnswer('8')"> <!--8-->
+      <input type="button" class="calculator__key" value="9" onclick="addAnswer('9')"> <!--9-->
+      <input type="button" class="calculator__key function__key" value="+" onclick="addAnswer('+')"> <!--PLUS-->
+      <input type="button" class="calculator__key" value="4" onclick="addAnswer('4')"> <!--4-->
+      <input type="button" class="calculator__key" value="5" onclick="addAnswer('5')"> <!--5-->
+      <input type="button" class="calculator__key" value="6" onclick="addAnswer('6')"> <!--6-->
+      <input type="button" class="calculator__key function__key" value="-" onclick="addAnswer('-')"> <!--MINUS-->
+      <input type="button" class="calculator__key" value="1" onclick="addAnswer('1')"> <!--1-->
+      <input type="button" class="calculator__key" value="2" onclick="addAnswer('2')"> <!--2-->
+      <input type="button" class="calculator__key" value="3" onclick="addAnswer('3')"> <!--3-->
+      <input type="button" class="calculator__key calculation__key--equal" value="=" onclick="calculate()"> <!--EQUALS-->
+      <input type="button" class="calculator__key" value="0" onclick="addAnswer('0')"> <!--0-->
+      <input type="button" class="calculator__key calculation__key--zero" value="00" onclick="addAnswer('00')"> <!--00-->
+      <input type="button" class="calculator__key" value="." onclick="addAnswer('.')"> <!--.-->
+      
+      
+    </div>
+  </form>
+
+    <script src="app.js"></script>
+</body>
+</html>
